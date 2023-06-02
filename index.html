@@ -35,7 +35,26 @@
 </head>
 <body class="landing-page sidebar-collapse">
 <style type="text/css">
-        .content {
+       #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+
+       .content {
             padding-top: 80px;
             position: relative;
             z-index: 1;
@@ -87,14 +106,17 @@
             justify-content: center;
             align-items: center;
             font-weight: 500;
-            border: 2px solid #434a5b;
-            background-color: #434a5b;
-            color: #ccc7c7;
+           
+            
+            background-image: linear-gradient(43deg, #dc1879 0%, #7b567b 46%, #94660f 100%);
+
+            color: #f5f0f0;
             max-width: 600px;
         }
         .link-btn:hover {
-            background-color: transparent;
-            color: #ccc7c7;
+            background: linear-gradient(43deg, hsla(52, 91%, 43%, 0.928) 20%, #f807f8 20%, #f4a209 100%);
+
+           color: #0a0a0a;
         }
         .link-img {
             height: 28px;
@@ -112,20 +134,52 @@
             margin-top: 25px;
             justify-content: center;
         }
+
+        #myVideo {
+  position: fixed;
+  background-size: contain;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  
+
+  width: 100%;
+  padding: 20px;
+}
+
     </style>
 <div class="container-fluid d-flex justify-content-center p-0">
-<div class="container d-flex justify-content-center" style="background-color: #596175">
+<div class="container d-flex justify-content-center" >
+    <!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="istockphoto-491926500-640_adpp_is.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  
+  
+  <!-- Use a button to pause/play the video with JavaScript -->
+
+</div>
 <div class="content d-flex flex-column align-items-center main-theme pr-0 pl-0" style="min-height: 100vh">
 <div class="avatar"></div>
 <h1 class="title" id="title" style="color: #FFFFFF">6-yards</h1>
 <p class="title-description" id="description" style="color: rgb(255, 255, 255);">PlayStation and cafe</p>
-<a href="https://drive.google.com/file/d/1HKssh8s0OTZcd_jFHHNYzbENwILlcCTo/view?usp=share_link" target="_blank" class="link-btn">
-<img class="link-img" src="https://cdn.me-qr.com/ListofLinks/129216.jpeg">
+<a href="https://drive.google.com/file/d/1JLh79hQyf1limpbxsYQWPk-d6BkGJ-Fv/view" target="_blank" class="link-btn">
+<img class="link-img" src="Menu free icons designed by Freepik.png">
 Menu
 </a>
-<a href="https://www.facebook.com/6YARD.PlayStaionCafe/reviews" target="_blank" class="link-btn">
-<img class="link-img" src="https://cdn.me-qr.com/ListofLinks/129218.jpeg">
-Rate us
+<a href="https://www.facebook.com/6YARD.PlayStaionCafe/" target="_blank" class="link-btn">
+<img class="link-img" src="Customer_feedback_glyph_icon-removebg-preview.png">
+Rate Us
 </a>
 <div class="social-inner">
 </div>
